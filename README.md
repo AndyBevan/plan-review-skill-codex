@@ -115,6 +115,6 @@ powershell -ExecutionPolicy Bypass -File .\docs\capture-screenshots.ps1
 
 ## Credits
 
-This Codex adaptation is based on the original `plan-review` project by [Joel Brinkley](https://github.com/joelbrinkley) (`@joelbrinkley`).
+This Codex adaptation is based on the original Claude version `plan-review` project by [Joel Brinkley](https://github.com/joelbrinkley) (`@joelbrinkley`).
 
 Original repository: https://github.com/joelbrinkley/plan-review-skill
