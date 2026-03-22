@@ -1,6 +1,6 @@
 # plan-review-skill-codex
 
-A Codex skill that generates visual, browser-viewable review artifacts from a plan before implementation begins.
+A [Codex](https://openai.com/codex/) skill that generates visual, browser-viewable review artifacts from a plan before implementation begins.
 
 See the proposed build before implementation starts.
 
@@ -55,7 +55,27 @@ An interactive checklist of risks, gaps, and tradeoffs, organized by severity an
 
 ## Installation
 
-Install this repo as a local Codex skill in your Codex skills directory using the files under `plan-review/`.
+Codex skills are typically discovered from `$CODEX_HOME/skills` or `~/.codex/skills`.
+
+Choose one:
+
+- `Global copy`: copy [plan-review](C:/DevGit/AndyBevan/AI-Codex/plan-review-skill-codex/plan-review) into your Codex skills directory.
+- `Global link`: symlink [plan-review](C:/DevGit/AndyBevan/AI-Codex/plan-review-skill-codex/plan-review) into your Codex skills directory if you want live edits from this repo.
+- `Project-local copy`: install into `.codex/skills/plan-review` inside this repo.
+
+Helper scripts:
+
+```text
+Project-local
+  ./scripts/install-skill-project.sh
+  .\scripts\install-skill-project.ps1
+
+Global
+  ./scripts/install-skill-global.sh
+  .\scripts\install-skill-global.ps1
+```
+
+The global scripts respect `CODEX_HOME` when set; otherwise they use the default Codex location. If you are actively editing the skill, prefer a global symlink over copying.
 
 ## Usage
 
@@ -104,6 +124,10 @@ The `_plan-review/` directory is intended for generated artifacts and is ignored
 - `evals/assertions.json`: shared and scenario-specific checks
 - `docs/demo/index.html`: local demo artifact used to capture README screenshots
 - `docs/capture-screenshots.ps1`: Playwright capture script for regenerating screenshots
+- `scripts/install-skill-project.ps1`: PowerShell helper for project-local installation
+- `scripts/install-skill-project.sh`: shell helper for project-local installation
+- `scripts/install-skill-global.ps1`: PowerShell helper for global installation
+- `scripts/install-skill-global.sh`: shell helper for global installation
 
 ## Refreshing screenshots
 
