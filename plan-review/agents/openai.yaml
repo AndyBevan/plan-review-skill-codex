@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan Review"
+  short_description: "Visual plan review before coding starts"
+  default_prompt: "Use $plan-review to generate visual review artifacts for this implementation plan before coding starts."
+
+policy:
+  allow_implicit_invocation: true

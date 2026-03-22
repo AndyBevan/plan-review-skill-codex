@@ -1,0 +1,46 @@
+{
+  "shared_assertions": [
+    {"id": "single-file", "text": "Output is a single index.html file, not multiple files"},
+    {"id": "tab-nav", "text": "Page has tab navigation bar with clickable tabs"},
+    {"id": "mermaid-cdn", "text": "Mermaid CDN script tag is present"},
+    {"id": "mermaid-rerender", "text": "JavaScript re-renders Mermaid on tab switch OR uses visibility-based hiding instead of display:none"},
+    {"id": "no-duplicate-mermaid-rels", "text": "No duplicate relationship lines between same entity pair in Mermaid ER diagram"},
+    {"id": "concerns-numbered", "text": "Concern cards have sequential numbers (#1, #2, etc.)"},
+    {"id": "concerns-interactive", "text": "Concern cards toggle reviewed state on click with localStorage persistence"},
+    {"id": "concerns-severity", "text": "Concerns are categorized as Critical, Important, or Consider"},
+    {"id": "concerns-filters", "text": "Filter buttons exist for severity levels"},
+    {"id": "arch-folder-tree", "text": "Architecture tab has annotated folder structure"},
+    {"id": "arch-module-diagram", "text": "Architecture tab has Mermaid module dependency diagram"},
+    {"id": "arch-pattern-cards", "text": "Architecture tab has pattern cards with What/Why/In practice"},
+    {"id": "index-table-aligned", "text": "Indexes use a proper HTML table with aligned columns, not loose divs"},
+    {"id": "dense-styling", "text": "Styling is compact/developer-friendly — small fonts, tight padding, 1px borders over shadows"}
+  ],
+  "eval_specific": {
+    "1": [
+      {"id": "mockups-tab", "text": "Mockups tab exists with sub-navigation for 4 screens"},
+      {"id": "mockups-dashboard", "text": "Dashboard mockup shows project cards with progress bars"},
+      {"id": "mockups-kanban", "text": "Kanban board mockup has 4 columns with task cards"},
+      {"id": "mockups-detail", "text": "Task detail modal mockup with comments section"},
+      {"id": "mockups-settings", "text": "Project settings mockup with members table"},
+      {"id": "all-7-entities", "text": "Data models tab shows all 7 entities (User, Project, ProjectMember, Task, Label, TaskLabel, Comment)"},
+      {"id": "task-primary", "text": "Task entity card spans full width as primary entity"},
+      {"id": "enums-present", "text": "Enum cards for TaskStatus, TaskPriority, and role enums"},
+      {"id": "lifecycle-flow", "text": "Task status lifecycle flow diagram present"}
+    ],
+    "2": [
+      {"id": "no-mockups-tab", "text": "No Mockups tab — API-only plan correctly skips UI mockups"},
+      {"id": "all-6-entities", "text": "Data models tab shows all 6 entities (Warehouse, Staff, Product, InventoryItem, StockMovement, AuditLog)"},
+      {"id": "4-enums", "text": "4 enum cards present (StaffRole, ProductCategory, MovementType, AuditAction)"},
+      {"id": "composite-index", "text": "Composite unique index on InventoryItem(productId, warehouseId) documented"},
+      {"id": "clean-arch-folders", "text": "Architecture shows Clean Architecture layers (Domain, Application, Infrastructure, API)"},
+      {"id": "cqrs-pattern", "text": "CQRS with MediatR pattern card present"}
+    ],
+    "3": [
+      {"id": "mockups-3-screens", "text": "Mockups tab has sub-nav for 3 screens (Overview, Funnel, Segments)"},
+      {"id": "mockups-charts", "text": "Dashboard mockup includes chart representations (KPI cards, line chart, bar chart)"},
+      {"id": "dual-db-entities", "text": "Data models shows both PostgreSQL (5 entities) and ClickHouse (2 entities)"},
+      {"id": "pg-er-diagram", "text": "Mermaid ER diagram covers PostgreSQL entity relationships"},
+      {"id": "dual-db-arch", "text": "Architecture diagram shows dual-database flow (PG + ClickHouse + Redis + Celery)"}
+    ]
+  }
+}
